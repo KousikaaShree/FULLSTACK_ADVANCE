@@ -16,7 +16,19 @@ function greet(name){
     console.log("Hello "+name)
 }
 greet("koushi")
- 
+ //git commits test
+
+//conditional statements
+
+function qq(q1){
+    if(q1>=18){
+        console.log("major")
+    }
+    else{
+        console.log("minor")
+    }
+}
+qq(86);
 
 function awere(q){
     if(q>=18){
