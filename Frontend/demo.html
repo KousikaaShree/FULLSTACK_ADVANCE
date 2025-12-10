@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Page</title>
+</head>
+
+<body>
+    <nav>
+    <a href="hme.html">Home</a>
+    <a href="https://google.com" target="_blank">Google</a>
+</nav>
+    <h1>Welcome to the Demo Page</h1>
+    <p>This is a simple HTML page for demonstration purposes.</p>
+    <img src ="https://via.placeholder.com/150" alt="Placeholder Image">
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </table>
+    <form>
+    <label>Name:</label>
+    <input type="text" required><br><br>
+
+    <label>Email:</label>
+    <input type="email" required><br><br>
+
+    <label>Gender:</label>
+    <select>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+    </select><br><br>
+
+    <label>Message:</label><br>
+    <textarea rows="4" cols="40"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+    <!--Sematic Tags>-->
+    <section>
+    <article>
+        <h2>HTML Basics</h2>
+        <p>HTML stands for HyperText Markup Language.</p>
+    </article>
+</section>
+<!-- Local Storage API -->
+ <input id ="nameinput" type="text" placeholder="Enter your name">
+ <button onclick="saveName()">Save Name</button>
+
+ <script>
+    function saveName() {
+        const name = document.getElementById('nameinput').value;
+        localStorage.setItem('username', name);
+        alert('Name saved: ' + name);
+    }
+ </script>
+</body>
+<!-- fixed,sticky-upto one point of time it will be fixed
+ and then we can scroll it!,relative,absolute -->

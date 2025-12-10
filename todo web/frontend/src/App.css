@@ -1,0 +1,37 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.add-section input {
+  margin: 8px;
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  margin: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.delete {
+  background-color: red;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px auto;
+  width: 60%;
+  border-radius: 10px;
+}
