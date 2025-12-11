@@ -11,9 +11,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // ---- MONGO CONNECTION ----
-mongoose.connect(process.env.MONGODB_URI)
-    .then(() => console.log("MongoDB Connected"))
-    .catch(err => console.log("DB Error:", err));
+mongoose
+  .connect(process.env.MONGODB_URI)
+  .then(() => console.log("MongoDB Connected"))
+  .catch(err => console.log("MongoDB Connection Error:", err.message));
 
 
 // ---- USER MODEL ----
